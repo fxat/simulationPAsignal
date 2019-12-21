@@ -10,10 +10,7 @@ __email__ = "franz.taffner@yahoo.de"
 
 #####[ IMPORTS ]###############################################################
 
-import numpy as np
 import matplotlib.pyplot as plt
-import pandas as pd
-import scipy.signal as sps
 
 import constants as C
 
