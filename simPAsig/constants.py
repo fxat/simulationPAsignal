@@ -2,13 +2,10 @@
 
 __author__ = "Franz Taffner"
 __copyright__ = "Copyright 2019"
-__license__ = "MIT"
+__license__ = "GNU GPLv3"
 __version__ = "0.1"
 __email__ = "franz.taffner@yahoo.de"
 
-"""
-
-"""
 
 N = int(1e5)    # Number of datapoints
 

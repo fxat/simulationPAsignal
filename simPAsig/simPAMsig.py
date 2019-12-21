@@ -2,7 +2,7 @@
 
 __author__ = "Franz Taffner"
 __copyright__ = "Copyright 2019"
-__license__ = "MIT"
+__license__ = "GNU GPLv3"
 __version__ = "0.1"
 __email__ = "franz.taffner@yahoo.de"
 
@@ -58,7 +58,7 @@ class photoAcousticSignal:
     def gaussianProfileLaserPulse(self):
         """ Gaussian temporal profil of a excitation laser pulse """
 
-        # Shape a gaussian function in the temporal domain ~ laster pulse
+        # Shape a gaussian function in the temporal domain ~ laser pulse
         sigma = C.tp/(2*np.sqrt(2*np.log(2)))
         LP = np.exp(-(self.t-C.t0)**2/(2*sigma**2))
 
