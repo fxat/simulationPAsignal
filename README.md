@@ -24,6 +24,10 @@ Excited with a gaussian shaped laserpulse and detected with a ultrasonic detecto
 ![](https://github.com/fxat/Master_thesis__GR-PAM_and_OUSD/blob/master/thesis/02_principles_of_photoacoustics/images/timeSphericalDet.png)
 
 ****
+## Startup
+
+runSim.py starts the simulation and states the simulation process.
+
 ## Extention possibilities
 
 * Simulation of 
