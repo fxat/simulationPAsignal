@@ -12,7 +12,7 @@ __email__ = "franz.taffner@yahoo.de"
 
 import matplotlib.pyplot as plt
 
-import constants as C
+from constants import constants as C
 
 #####[ CLASS ]#################################################################
 

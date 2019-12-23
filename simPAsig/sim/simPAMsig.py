@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import scipy.signal as sps
 
-import constants as C
+import constants.constants as C
 from plots.simPlots import pamPlots
 
 #####[ CLASS ]#################################################################

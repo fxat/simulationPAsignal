@@ -14,7 +14,7 @@ sensor is examined.
 
 #####[ IMPORTS ]###############################################################
 
-from simPAMsig import photoAcousticSignal
+from sim.simPAMsig import photoAcousticSignal
 
 #####[ SIMULATION ]############################################################
 

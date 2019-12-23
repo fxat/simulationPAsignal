@@ -1,1 +1,1 @@
-from .. import constants
+import simPAsig.runSim
