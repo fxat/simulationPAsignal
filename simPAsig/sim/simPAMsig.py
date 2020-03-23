@@ -6,11 +6,10 @@ __license__ = "GNU GPLv3"
 __version__ = "0.1"
 __email__ = "franz.taffner@yahoo.de"
 
-"""
-This script simulatates a excitation of a acoustical wave by a laser. 
-Furthermore the detection with a pointlike detector and a bandwidth limited
-sensor is examined.
-"""
+## INFO:
+# This script simulatates a excitation of a acoustical wave by a laser. 
+# Furthermore the detection with a pointlike detector and a bandwidth limited
+# sensor is examined.
 
 #####[ IMPORTS ]###############################################################
 
@@ -44,10 +43,9 @@ class photoAcousticSignal:
         data = {'dist': C.cs*self.t, 'preasure': np.zeros(C.N)}
         self.pP = pd.DataFrame(data, dtype=float)
 
-        """
-        Create a N-shaped preasure function that is excited 
-        by an ideal laser pulse
-        """
+        # Create a N-shaped preasure function that is excited 
+        # by an ideal laser pulse
+
         self.pP['preasure']= np.piecewise(self.t, 
                         [np.logical_and(C.cs*self.t>(C.z-C.a), C.cs*self.t<(C.z+C.a))], 
                         [lambda tt: 0.5*(C.z-C.cs*tt)/C.z])
@@ -71,9 +69,7 @@ class photoAcousticSignal:
         self.pamSimPlots.plot_laserPulse(ax_laserPulse)
 
     def sphereExciteLaser(self):
-        """ 
-        Signal of a sphere with finite excitation pulse duration.
-        """
+        """ Signal of a sphere with finite excitation pulse duration. """
 
         sigSpherePulse = np.convolve(self.pP['preasure'], 
                                     self.laserPulse['lPpowerNormed'], 
@@ -139,10 +135,7 @@ class photoAcousticSignal:
         self.pamSimPlots.plot_sensor(ax_sensor)
 
     def resTempSigPointSphericalSource(self):
-        """ 
-        Resulting temporal signals for a point like detector and a spherical
-        detector
-        """
+        """ Resulting temporal signals for a point like detector and a spherical detector. """
 
         specResultTransducer_temp = np.fft.ifft(np.fft.ifftshift(self.transducerSig['specTransMeas'])).real
         
