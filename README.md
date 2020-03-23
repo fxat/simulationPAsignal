@@ -45,3 +45,5 @@ This project is licensed under the GNU GPLv3 License - see the [LICENSE](https:/
 ### Contact
 
 franz.taffner@yahoo.de
+****
+[![CodeFactor](https://www.codefactor.io/repository/github/fxat/simulationpasignal/badge)](https://www.codefactor.io/repository/github/fxat/simulationpasignal)
