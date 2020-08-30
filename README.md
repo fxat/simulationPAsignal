@@ -26,7 +26,10 @@ Excited with a gaussian shaped laserpulse and detected with a ultrasonic detecto
 ****
 ## Startup
 
-runSim.py starts the simulation and states the simulation process.
+```python
+python runSim.py
+```
+starts the simulation and states the simulation process.
 
 ## Extention possibilities
 
